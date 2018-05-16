@@ -9,9 +9,11 @@
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
 \pgnrestart\pgnstarts0
-\pard\plain \ltrch\loch {\f1\fs24\b1\i0 Package}{\f2\fs24\b0\i0 : }{\f0\fs18\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.}{\f0\fs18\b0\i0\cf1\cb2\highlight2 admin.identity.controller}{\f0\fs18\b0\i0\cf1\cb2\highlight2 .}{\f0\fs18\b0\i0\cf1\cb2\highlight2 IdentityController}
+\pard\plain \ltrch\loch {\f1\fs24\b1\i0 admin/identities api}
+\par\plain \f1\fs24\b1\i0
+\par\plain {\f1\fs24\b1\i0 Package}{\f2\fs24\b0\i0 : }{\f0\fs18\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.admin.identity.controller.IdentityController}
 \par\plain \f0\fs18\b0\i0\cf1\cb2\highlight2
-\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 PUT "}{\f3\fs18\b1\i0\cf3\cb2\highlight2 /admin/identities}{\f3\fs18\b1\i0\cf3\cb2\highlight2 /"}
+\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 PUT "/admin/identities/"}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Returns 202 if successful. Creates (or updates) an Account and Identity mapping within the Neo application. Creates or updates records within the Neo application for a user being created/updated from Auth0. If no QID is supplied, the one is allocated and the entries are created. If a QID is supplied, the existing entry is updated. The QID is logged, and an event is created (type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "attributes_stored" }{\f2\fs24\b0\i0 if identity updated, }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "id_created"}{\f2\fs24\b0\i0   if identity created).}
 \par\plain \f2\fs24\b0\i0
@@ -21,20 +23,20 @@
 \par\plain {\f2\fs24\b0\i0 Returns 200 if the identity was found. Returns 204 if no identity was found.}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 GET "/admin/identities/}{\f3\fs18\b1\i0\cf3\cb2\highlight2 \{qid\}/customer_attributes}{\f3\fs18\b1\i0\cf3\cb2\highlight2 "}
+\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 GET "/admin/identities/\{qid\}/customer_attributes"}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Returns 200 if the attributes were found. Returns 204 if no attributes possessed a value. Retrieves Attributes for the given QID. Functionality is the same as the customer based API, however this is for administrative calls where the caller may not have the Customer Access Token. Requires an Access Token instead. The Access Token is used to create a attribute_release_token for use in the Customer Attributes API. Calls Customer Attributes API to retrieve the attributes}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 POST "/admin/identities/}{\f3\fs18\b1\i0\cf3\cb2\highlight2 migrate}{\f3\fs18\b1\i0\cf3\cb2\highlight2 "}
+\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 POST "/admin/identities/migrate"}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Returns 202 if successful. Returns 409 if the identity already exists. Creates an Account and Identity mapping within the Neo application. The QID is logged, and one of more events is/are created.}
 \par\pard\plain \tx240\tx720\li720\fi-720\ltrch\loch \ls1\ilvl0{\listtext\f2\fs24\b0\i0	\loch\af2\hich\af2\dbch\af2\uc1\u9679\'3F	}{\f2\fs24\b0\i0 Type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "identity_migrated" }{\f2\fs24\b0\i0 for the migration of the core identity}
 \par\pard\plain \tx240\tx720\li720\fi-720\ltrch\loch \ls2\ilvl0{\listtext\f2\fs24\b0\i0	\loch\af2\hich\af2\dbch\af2\uc1\u9679\'3F	}{\f2\fs24\b0\i0 Type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "attributes_stored" }{\f2\fs24\b0\i0 for the Share field }
-\par\plain \ilvl0{\listtext\f2\fs24\b0\i0	\loch\af2\hich\af2\dbch\af2\uc1\u9679\'3F	}{\f2\fs24\b0\i0 Type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "}{\f3\fs18\b1\i0\cf3\cb2\highlight2 eoi_doc_migrated}{\f3\fs18\b1\i0\cf3\cb2\highlight2 "}{\f2\fs24\b0\i0   if existing EOI data was provided. }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0	\loch\af2\hich\af2\dbch\af2\uc1\u9679\'3F	}{\f2\fs24\b0\i0 Type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "eoi_doc_migrated"}{\f2\fs24\b0\i0   if existing EOI data was provided. }
 \par\pard\plain \ltrch\loch \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 PUT "/admin/identities}{\f3\fs18\b1\i0\cf3\cb2\highlight2 /\{qid\}/mobile}{\f3\fs18\b1\i0\cf3\cb2\highlight2 "}
+\par\plain {\f3\fs18\b1\i0\cf3\cb2\highlight2 PUT "/admin/identities/\{qid\}/mobile"}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Returns 204 if successful. Updates the Identity Management Mobile phone number of an existing identity, for the given Identity QID. Creates an event of type }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "mob_change_request"}{\f2\fs24\b0\i0  on success. Creates an EOI database entry for the new mobile number with verificationMethod =  }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "Proof of Possession"}{\f2\fs24\b0\i0 . Creates an event for type = }{\f3\fs18\b1\i0\cf3\cb2\highlight2 "mob_change_request"}{\f2\fs24\b0\i0 .}
 \par\plain \f2\fs24\b0\i0

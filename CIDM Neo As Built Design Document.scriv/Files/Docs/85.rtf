@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 CourierNewPSMT;}{\f1\fmodern\fcharset0\fprq2 TimesNewRomanPS-BoldMT;}{\f2\fmodern\fcharset0\fprq2 TimesNewRomanPSMT;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \ltrch\loch {\f1\fs24\b1\i0 Configuration Files}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Several JSON files are used to configure the system data. For development they are held in neo-application.resources.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 authentication_partner.json}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 This file lists each authentication  partner, along with the credential strength assigned to the authentication partner. If a new authentication partner is required, it must be added into this file.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 It is loaded by AuthenticationPartnerServiceImpl.java on system start up.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 greenid_translation.json}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 For each GreenId verification service used by the system, this provides a mapping between the fieldnames used by GreenId and the fieldnames used by CIDM Neo, and a handler class to be used.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 It is loaded by GreenIdTranslationServiceImpl.java on system start up. It is referenced in DocumentHandlerFactory.java, and used in VerificationLogicImpl.java.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 neo_identity_config.json}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 This file defines all the attributes used in the Customer Attribute repository, including whether they are calculated, whether they can be shared without asking, valid values if they are enumerated, and whether their value can be stored.  Any new attributes must be defined in this file.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 It also lists valid verification types, and for each verification type, the attributes that can be verified by that verification. Any new attributes must be defined in this file. Any new verification  types must be defined in this file.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 It is loaded by IdentityConfigServiceImpl.java during system start up}}
