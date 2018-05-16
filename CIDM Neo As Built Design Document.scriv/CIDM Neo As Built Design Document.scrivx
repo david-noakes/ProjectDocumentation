@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.7.0" Device="PC11424" Modified="2018-05-15 17:30:42 +1000" ModID="FE602DD8-9FA4-411F-8F80-4F75B8CE2FB5">
+<ScrivenerProject Template="No" Version="1.5" Creator="SCRWIN-1.9.7.0" Device="PC11424" Modified="2018-05-16 11:55:45 +1000" ModID="F6E442C7-C988-4C7B-9EB2-48B7ED97EF6B">
     <Binder>
         <BinderItem ID="0" UUID="3FA74D50-2B26-46FC-A9A8-9661879F8971" Created="2006-11-05 02:27:29 +1000" Modified="2007-03-26 07:00:41 +1000" Type="DraftFolder">
             <Title>Manuscript</Title>
@@ -37,6 +37,16 @@
                                 <Target Type="Words">0</Target>
                             </TextSettings>
                         </BinderItem>
+                        <BinderItem ID="74" UUID="E8AC350F-67D4-4A8C-9EFE-FDE506484753" Created="2018-05-16 10:50:08 +1000" Modified="2018-05-16 11:02:04 +1000" Type="Text">
+                            <Title>&lt;$sn&gt; Target Audience</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>185,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
                         <BinderItem ID="45" UUID="FA7F9048-670D-4ECF-8449-229634928A12" Created="2018-05-15 10:48:06 +1000" Modified="2018-05-15 11:30:37 +1000" Type="Text">
                             <Title>&lt;$sn&gt; Related Documentation</Title>
                             <MetaData>
@@ -59,6 +69,17 @@
                         <Target Type="Words">0</Target>
                     </TextSettings>
                     <Children>
+                        <BinderItem ID="73" UUID="C3C29ADB-E224-40D2-8077-C6767C906C87" Created="2018-05-16 10:02:09 +1000" Modified="2018-05-16 10:42:50 +1000" Type="Text">
+                            <Title>Repositories</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>rtf</FileExtension>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>49,0</TextSelection>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                        </BinderItem>
                         <BinderItem ID="43" UUID="93D0D23E-F921-48EB-9BAB-6359453CF92C" Created="2018-05-15 10:39:54 +1000" Modified="2018-05-15 10:39:54 +1000" Type="Text">
                             <Title>Section</Title>
                             <MetaData>
@@ -71,6 +92,29 @@
                             </TextSettings>
                             <Children>
                                 <BinderItem ID="44" UUID="7BCF4894-D1C7-416E-A782-8CC1A9B0A1FD" Created="2018-05-15 10:39:54 +1000" Modified="2018-05-15 10:39:54 +1000" Type="Text">
+                                    <Title>Sub-Section</Title>
+                                    <MetaData>
+                                        <LabelID>4</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem ID="71" UUID="1469C8F7-62D0-4406-B854-A46604A284BD" Created="2018-05-16 10:01:57 +1000" Modified="2018-05-16 10:01:57 +1000" Type="Text">
+                            <Title>Section-1</Title>
+                            <MetaData>
+                                <LabelID>4</LabelID>
+                                <StatusID>2</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <Target Type="Words">0</Target>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem ID="72" UUID="30B4942F-A0CC-41D6-B6EB-A3F42F201D1E" Created="2018-05-16 10:01:57 +1000" Modified="2018-05-16 10:01:57 +1000" Type="Text">
                                     <Title>Sub-Section</Title>
                                     <MetaData>
                                         <LabelID>4</LabelID>
@@ -264,6 +308,16 @@
                                         <Target Type="Words">0</Target>
                                     </TextSettings>
                                 </BinderItem>
+                                <BinderItem ID="77" UUID="0CEC7EE8-A901-4C6A-AAD0-5DFE216A630F" Created="2018-05-16 11:23:11 +1000" Modified="2018-05-16 11:24:42 +1000" Type="Text">
+                                    <Title>admin/event_types api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>166,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
                                 <BinderItem ID="55" UUID="9B0093CA-A899-400D-AB99-89F514F3E682" Created="2018-05-15 10:51:58 +1000" Modified="2018-05-15 17:25:34 +1000" Type="Text">
                                     <Title>admin/eoi api</Title>
                                     <MetaData>
@@ -276,13 +330,13 @@
                                         <Target Type="Words">0</Target>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem ID="70" UUID="9E32695A-8465-4653-8BA5-9C731E307780" Created="2018-05-15 17:26:52 +1000" Modified="2018-05-15 17:30:34 +1000" Type="Text">
+                                <BinderItem ID="70" UUID="9E32695A-8465-4653-8BA5-9C731E307780" Created="2018-05-15 17:26:52 +1000" Modified="2018-05-16 11:10:55 +1000" Type="Text">
                                     <Title>admin/events api</Title>
                                     <MetaData>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>45,0</TextSelection>
+                                        <TextSelection>234,0</TextSelection>
                                         <Target Type="Words">0</Target>
                                     </TextSettings>
                                 </BinderItem>
@@ -292,7 +346,67 @@
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>1193,0</TextSelection>
+                                        <TextSelection Caret="2019">1990,29</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="78" UUID="6B0982B4-4532-4376-A515-EE227BBDA3DB" Created="2018-05-16 11:27:29 +1000" Modified="2018-05-16 11:37:49 +1000" Type="Text">
+                                    <Title>customer_attributes api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>737,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="75" UUID="8410E5FA-D7DD-4B5A-AE82-B39E317B5C66" Created="2018-05-16 11:13:03 +1000" Modified="2018-05-16 11:22:24 +1000" Type="Text">
+                                    <Title>customer_events api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>157,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="76" UUID="26B759D7-A0CC-4AC1-8836-85BCBF624500" Created="2018-05-16 11:18:03 +1000" Modified="2018-05-16 11:44:39 +1000" Type="Text">
+                                    <Title>customer_identity api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>432,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="80" UUID="36F47AFB-3214-4ABA-AAAD-F83651FCB226" Created="2018-05-16 11:45:45 +1000" Modified="2018-05-16 11:46:41 +1000" Type="Text">
+                                    <Title>customer_shared api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>46,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="81" UUID="FDBBA944-E893-401B-8F33-741C791859A0" Created="2018-05-16 11:48:03 +1000" Modified="2018-05-16 11:55:31 +1000" Type="Text">
+                                    <Title>health api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>42,0</TextSelection>
+                                        <Target Type="Words">0</Target>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem ID="79" UUID="B21339B1-A166-403C-9C43-3015A841F1E1" Created="2018-05-16 11:38:52 +1000" Modified="2018-05-16 11:40:43 +1000" Type="Text">
+                                    <Title>verify_customer_attributes api</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>115,0</TextSelection>
                                         <Target Type="Words">0</Target>
                                     </TextSettings>
                                 </BinderItem>
@@ -626,7 +740,7 @@
     <ProjectTargets>
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 13:24:39 +0100" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" ResetType="Midnight" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="No" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="829" Characters="5892" Date="2018-05-15 11:06:24 +1000"/>
+        <PreviousSession Words="326" Characters="2629" Date="2018-05-16 10:01:36 +1000"/>
     </ProjectTargets>
     <Collections>
         <Collection Type="Binder" ID="48DE1CBF-217F-4B94-944D-6D8C97396DCF" Color="0.901961 0.917647 0.933333">
