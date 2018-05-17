@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 CourierNewPSMT;}{\f1\fmodern\fcharset0\fprq2 TimesNewRomanPS-BoldMT;}{\f2\fmodern\fcharset0\fprq2 TimesNewRomanPSMT;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue128;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \ltrch\loch {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_account}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The idm_account table holds core information about an Account.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 An "Account" refers to someone\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s login account (e.g. Google, Microsoft, QGA) and not their CIDM Identity (which is identified by a QID).}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Multiple Accounts can be linked to a single Identity.}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.AccountRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_account_mapping}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Account Mapping table is used to link an Account to an Identity.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Each Account will have at most one record in this table}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.AccountIdentityMappingRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_customer_addresses}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Customer Address table holds only Address records.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 There will be one record per QID per Address Type}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAddressRecord}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.AddressDocument  (embedded document)}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The values of fields in the AddressDocument are encrypted}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_customer_attributes}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Customer Attributes table holds those Attributes specified in the }{\f1\fs24\b1\i0 neo_identity_config.json}{\f2\fs24\b0\i0\cf1\cb2\highlight2  file.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 There will be one record per QID per AttributeName}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The attributes stored in this table are controlled by the Attribute Configuration file}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAttributesRecord}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAttribute (embedded document)}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The value field in the CustomerAttribute document is encrypted}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_encryption_keys}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table stores the encryption key for each QID. There will be one record per QID.}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.EncryptionKeyRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_event_log}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table stores events logged to the database. There is no mapper class, but the DAO uses}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.api.model.}{\f1\fs24\b1\i0\cf1\cb2\highlight2 EventNotification}{\f2\fs24\b0\i0\cf1\cb2\highlight2  for input and output}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_identity_attributes}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Customer Identity Attributes table holds a limited set of core IdentityAttributes}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 There will be one record per QID and Attribute}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Note: This table is NOT controlled by the }{\f1\fs24\b1\i0 neo_identity_config.json}{\f2\fs24\b0\i0\cf1\cb2\highlight2  file.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table currently has: GivenName, MiddleName, FamilyName, DateOfBirth, Picture}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerIdentityRecord}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAttribute (embedded document)}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The value field in the CustomerAttribute document is encrypted}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_identity_core}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Identity table is the core record for an Identity. The values stored here are not encrypted, since they are not identity values. (Currently qid, identityStatus, identityMobile, iral, dateCreated, DateModified)}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.IdentityCoreRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_rsa_signing_keys}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Stores keys for use in the RSA signing process of attributes and authorisation tokens}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.RSASigningKeyRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_session_attributes}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table stores attributes required for a user session. There will be multiple records for a sessionId}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.SessionAttributesRecord}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAttribute (embedded document)}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The value field in the CustomerAttribute document is encrypted}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_session_iaal}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table records the IAAL for the session. This is Identity Authentication Assurance Level with levels 0 to 2, and is the measure of trust in the Authentication Provider.}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.SessionIAALRecord}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_verification_group}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Verification Group records a single verification session. All Verification Events that occurred at the same time are grouped under a single Verification Group. It contains a list of VerificationEvent}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 A Verification Event stores the details of one "Document" being verified. When the verification event was created by a Document Verification Service, this will be real documents such as "Qld Drivers Licence" or "Australian Passport". When the verification event records the storage of trusted attributes from a remote source such as some trusted department or agency, it will describe an artificial "Attribute Container" used to represent the trusted agency as a source of verification. It contains a list of AttributeUsed.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 AttributeUsed provides the link between Verification Events and the customer attributes verified by that event. It allows software to quickly locate verification events that are associated with a specific customer attribute. It also stores meta data about the attribute at the time of use in the verification process.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Note: the value of an attribute used in the verification process is not stored in this table.}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.VerificationGroup}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.VerificationEvent (embedded document)}
+\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.AttributeUsed (embedded document)}
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2}
