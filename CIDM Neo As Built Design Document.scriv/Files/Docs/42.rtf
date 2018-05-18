@@ -1,9 +1,9 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
-{\fonttbl{\f0\fmodern\fcharset0\fprq2 CourierNewPSMT;}{\f1\fmodern\fcharset0\fprq2 TimesNewRomanPSMT;}{\f2\fmodern\fcharset0\fprq2 LiberationSerif-Bold;}{\f3\fmodern\fcharset0\fprq2 LiberationSerif;}}
+{\fonttbl{\f0\fnil\fcharset0\fprq2 Georgia;}{\f1\fmodern\fcharset0\fprq2 TimesNewRomanPSMT;}{\f2\fmodern\fcharset0\fprq2 LiberationSerif-Bold;}{\f3\fmodern\fcharset0\fprq2 LiberationSerif;}}
 {\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue10;\red217\green217\blue217;}
 {\*\listtable
 {\list\listtemplateid1\listhybrid
-{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li720\lin720}{\listname ;}\listid1}}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li0\lin0}{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
 \pgnrestart\pgnstarts0
@@ -179,25 +179,27 @@
 \pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
 \par\plain {\f1\fs24\b0\i0\cf1 The last 2, (\loch\af1\hich\af1\dbch\af1\uc1\u8220\'93CIDM-AAL1\u8221\'94, \u8220\'93CIDM-AAL2\u8221\'94), are for use when a customer has logged in through CIDM Classic (wrapped), and now transfers to a service that uses CIDM Neo. }
 \par\plain \f1\fs24\b0\i0\cf1
-\par\plain {\f1\fs24\b0\i0\cf1 Upon successful login, Auth0 passes any login data and session data back to the widget. The login widget in turn passes this data to CIDM Neo. If the identity does not exist (as identified by the authentication Partner Id and authentication Partner Key), then a new identity is created, a QID is allocated, and the account information is linked with the identity.}
+\par\plain {\f1\fs24\b0\i0\cf1 Upon successful login, Auth0 passes any login data and session data back to the widget. The login widget in turn passes this data to CIDM Neo. }
+\par\plain {\f1\fs24\b0\i0\cf1 If the identity does not exist (as identified by the authentication Partner Id and authentication Partner Key), then a new identity is created, a QID is allocated, and the account information is linked with the identity. In addition, the evidence of identity process is initiated to take the new identity up to an IRAL level of 2.}
 \par\plain \f1\fs24\b0\i0\cf1
 \par\plain {\f1\fs24\b0\i0\cf1 At this point, control returns to the Agency page. The agency will request identity data and a security level (1 or 2).}
-\par\plain {\f1\fs24\b0\i0\cf1 If the requested level is 1, then only data marked as \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93share without asking\u8221\'94 can be returned.}
-\par\plain {\f1\fs24\b0\i0\cf1 If the requested level is 2, then}
-\par\plain {\f1\fs24\b0\i0\cf1     If the authentication partner IAAL is 1 then }
-\par\plain {\f1\fs24\b0\i0\cf1         the step up process is invoked, sending an SMS to mobile number}
-\par\plain {\f1\fs24\b0\i0\cf1         Correctly entering the code will increase the IAAL to 2}
-\par\plain {\f1\fs24\b0\i0\cf1     If the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s identity AAAL is 1, then }
-\par\plain {\f1\fs24\b0\i0\cf1         they have to through the evidence of identity process to get the identity to an AAAL of 2}
-\par\plain {\f1\fs24\b0\i0\cf1     Once both IAAL and AAAL are equal to 2, the data can be shared, subject to the sharing preference.}
-\par\plain {\f1\fs24\b0\i0\cf1 If the requested level = 2 and the sharing preference is not = Always then}
-\par\plain {\f1\fs24\b0\i0\cf1     The sharing preference widget displays the sharing preference dialogue}
-\par\plain {\f1\fs24\b0\i0\cf1     The customer select }
-\par\pard\plain \tx240\tx720\li720\fi-720\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 cancel, which will not provide any requested data to the agency}
+\par\plain \f1\fs24\b0\i0\cf1
+\par\pard\plain \ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the sharing preference is not = Always then}
+\par\pard\plain \li708\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 The sharing preference widget displays the sharing preference dialogue}
+\par\plain {\f1\fs24\b0\i0\cf1 The customer selects one of: }
+\par\pard\plain \tx240\tx720\li1428\fi-720\ri-999\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 cancel, which equates to \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93do not share\u8221\'94}
 \par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Share once, which will share the requested data}
 \par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Share always, which will record the choice in the CIDM Neo database\line and then share the data}
-\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1    }
-\par\plain {\f1\fs24\b0\i0\cf1 The customer then interacts with the agency service.}
+\par\pard\plain \ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If Sharing Preference is \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93do not share\u8221\'94, only data marked as \u8220\'93share without asking\u8221\'94 will be shared. }
+\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 Otherwise data will be shared with the agency as follows:}
+\par\plain {\f1\fs24\b0\i0\cf1 If the requested level is 1, then data marked as \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93share without asking\u8221\'94 and \u8220\'93self asserted\u8221\'94 can be returned.}
+\par\pard\plain \ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the requested level is 2, then}
+\par\pard\plain \li708\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the authentication partner IAAL is 1 then }
+\par\pard\plain \li1416\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 the step up process is invoked, sending an SMS to mobile number.}
+\par\plain {\f1\fs24\b0\i0\cf1 Correctly entering the code will increase the IAAL to 2}
+\par\pard\plain \ri-999\ql\ltrch\loch \f1\fs24\b0\i0\cf1
+\par\plain {\f1\fs24\b0\i0\cf1    }
+\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 The customer then interacts with the agency service.}
 \par\plain \f1\fs24\b0\i0\cf1
 \par\plain {\f1\fs24\b0\i0\cf1 There are other widgets that can be used for purposes such as changing password, mobile number and so on.}
 \par\plain \f1\fs24\b0\i0\cf1
