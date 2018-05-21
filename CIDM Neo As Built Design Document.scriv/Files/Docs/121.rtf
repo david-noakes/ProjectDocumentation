@@ -1,0 +1,8 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fnil\fcharset0\fprq2 Georgia;}{\f1\fnil\fcharset0\fprq2 TimesNewRomanPSMT;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \ri-998\sa120\sb120\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 All the databases encrypt identity data. Each QID has a different key}
+\par\plain {\f1\fs24\b0\i0\cf1 AWS KMS will store a master key that is used to encrypt and decrypt QID specific keys. These QID specific keys will be stored in the DynamoDB database. }
+\par\plain {\f1\fs24\b0\i0\cf1 The AWS Key Management Store and the associated QID key DynamoDB database will be secured using AWS IAM roles (Identity and Access Management) such that only the Customer Attribute Repository management software has access to the keys, without the intervention of the OSS AWS production support team}}
