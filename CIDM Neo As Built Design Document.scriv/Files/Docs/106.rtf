@@ -1,16 +1,33 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
-{\fonttbl{\f0\fnil\fcharset0\fprq2 Georgia;}{\f1\fnil\fcharset0\fprq2 TimesNewRomanPSMT;}}
+{\fonttbl{\f0\fnil\fcharset0\fprq2 Georgia;}{\f1\fnil\fcharset0\fprq2 TimesNewRomanPSMT;}{\f2\fnil\fcharset0\fprq2 TimesNewRomanPS-BoldMT;}}
 {\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
 {\*\listtable
 {\list\listtemplateid1\listhybrid
-{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li720\lin720}{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li720\lin720}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li720\lin720}{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\cf1\fi-360\li720\lin720}{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9679\'3F;}{\levelnumbers;}\f1\fs24\b0\i0\fi-360\li720\lin720}{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
 \pgnrestart\pgnstarts0
-\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 This widget runs in the CIDM AWS cloud and talks to Auth0 management API. It is used to change the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s QGA account userId. If the customer attempts to change the userId on an account that is not QGA they will receive an error. The customer must be logged in to perform this process.}
+\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 This widget runs in the CIDM AWS cloud and talks to Auth0 management API. It is used to change the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s QGA account userId. If the customer attempts to change the userId for a non QGA account they will receive an error. The customer must be logged in to perform this process.}
 \par\plain {\f1\fs24\b0\i0\cf1 The process prompt for a new email address (this is the QGA userId). The widget will send a code to the new email address. Once the user enters the code and submits, the widget will:}
 \par\pard\plain \tx240\tx720\li720\fi-720\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 change the username/email for their Auth0 account.}
 \par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Change the username/email for CIDM}
 \par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the result of the CIDM Change Username was a success then the Customer is send an email notifying them the Username was successfully changed.}
 \par\plain {\f1\fs24\b0\i0\cf1 If the result of the CIDM Change Username was a failure then the change is backed out.}
-\par\plain \f1\fs24\b0\i0\cf1}
+\par\plain {\f2\fs24\b1\i0\cf1 Security:}{\f1\fs24\b0\i0\cf1  }
+\par\pard\plain \tx240\tx720\li720\fi-720\ql\ltrch\loch \ls2\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Customer_JWT}
+\par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Session_JWT}
+\par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Two factor verification using new email}
+\par\pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
+\par\plain {\f2\fs24\b1\i0\cf1 Autho API calls:}
+\par\pard\plain \tx240\tx720\li720\fi-720\ql\ltrch\loch \ls3\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Patch: /api/v2/users}
+\par\pard\plain \ql\ltrch\loch \f2\fs24\b1\i0\cf1
+\par\plain {\f2\fs24\b1\i0\cf1 CIDM Neo API Calls:}
+\par\pard\plain \tx240\tx720\li720\fi-720\ltrch\loch \ls4\ilvl0{\listtext\f1\fs24\b0\i0	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0 GET /admin/identities}
+\par\plain \ilvl0{\listtext\f1\fs24\b0\i0	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0 PUT /admin/accounts/\{partner_id\}/\{partner_key\}/email}
+\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1  }}

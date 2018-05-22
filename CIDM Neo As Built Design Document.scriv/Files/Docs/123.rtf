@@ -9,13 +9,15 @@
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
 \pgnrestart\pgnstarts0
-\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 This widget runs in the CIDM AWS cloud and talks to Auth0 management API. It is used to change the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s QGA account password. Other Authentication providers will have their own password change widget. If the customer attempts to change the password for a non QGA account they will receive an error.}
+\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 This widget runs in the CIDM AWS cloud and talks to Auth0 management API. It is used to change the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s QGA account password when the customer cannot remember it. Other Authentication providers will have their own password change widget. If the customer attempts to change the password for a non QGA account they will receive an error.}
 \par\plain {\f1\fs24\b0\i0\cf1 It uses two factor authentication to verify the customer is allowed to reset their password. The process will send a code to the customer\loch\af1\hich\af1\dbch\af1\uc1\u8217\'92s email address. Once the user enters the code and submits, they will be able to enter a new password into their Auth0 account (via the Auth0 change password api).}
 \par\plain {\f1\fs24\b0\i0\cf1 If the result of the Auth0 Change Password was a success then the Customer is send an email notifying them the Password was successfully changed.}
 \par\plain {\f2\fs24\b1\i0\cf1 Security:}{\f1\fs24\b0\i0\cf1  }
 \par\pard\plain \tx240\tx720\li720\fi-720\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Service_JWT}
+\par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Email entered must exist for an identity}
 \par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0\cf1 Two factor verification using email}
 \par\pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
 \par\plain {\f2\fs24\b1\i0\cf1 CIDM Neo API Calls:}
-\par\pard\plain \tx240\tx720\li720\fi-720\ltrch\loch \ls2\ilvl0{\listtext\f1\fs24\b0\i0	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0 GET /admin/identities?partner_id=\{partner_id\}&partner_key=\{partner_key\}}
-\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1  }}
+\par\pard\plain \tx240\tx720\li720\fi-720\ltrch\loch \ls2\ilvl0{\listtext\f1\fs24\b0\i0	\loch\af1\hich\af1\dbch\af1\uc1\u9679\'3F	}{\f1\fs24\b0\i0 GET /admin/accounts }
+\par\pard\plain \ql\ltrch\loch \f1\fs24\b0\i0
+\par\plain {\f1\fs24\b0\i0\cf1  }}

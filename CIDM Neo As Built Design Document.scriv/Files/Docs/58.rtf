@@ -40,6 +40,7 @@
 \par\pard\plain \ri-476\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 The QGA account data resides in the }{\f3\fs24\b1\i0\cf1 Customer }{\f1\fs24\b0\i0\cf1 entity of the Auth0 MongoDB. The username is the email address from QGA, the password is hashed with bcrypt. The entity includes fields used for managing the account, as well as metadata fields:}
 \par\pard\plain \tx240\tx720\li720\fi-360\ri-998\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\bullet 	}{\f1\fs24\b0\i0\cf1 App metadata \endash  encrypted, cannot be modified by customers, prevents tampering with data. Meta data contains:  }
 \par\pard\plain \li1080\fi-360\ri-998\ql\ltrch\loch \ls1\ilvl1{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9702\'3F	}{\f1\fs24\b0\i0\cf1 email_verified, }
+\par\plain \ilvl1{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9702\'3F	}{\f1\fs24\b0\i0\cf1 QID}
 \par\pard\plain \li720\fi-360\ri-998\ql\ltrch\loch \ls1\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\bullet 	}{\f1\fs24\b0\i0\cf1 Identities \endash  a list of linked authentication identities. Auth0 will use this to record the account used:}
 \par\pard\plain \li1080\fi-360\ri-998\ql\ltrch\loch \ls1\ilvl1{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9702\'3F	}{\f1\fs24\b0\i0\cf1 QGA accounts (provider = "QGA), }
 \par\plain \ilvl1{\listtext\f1\fs24\b0\i0\cf1	\loch\af1\hich\af1\dbch\af1\uc1\u9702\'3F	}{\f1\fs24\b0\i0\cf1 Social accounts (isSocial = true) Google and Microsoft}
@@ -47,7 +48,7 @@
 \par\pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
 \par\pard\plain \fi720\ltrch\loch \f1\fs24\b0\i0\cf1
 \par\pard\plain \ql\ltrch\loch {\f2\fs24\b1\i0\cf3 Social Accounts}
-\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 These include Google and Microsoft. The account information still resides in the }{\f3\fs24\b1\i0\cf1 customer}{\f1\fs24\b0\i0\cf1  entity but the password will be blank.}
+\par\plain {\f1\fs24\b0\i0\cf1 These include Google and Microsoft. The account information still resides in the }{\f3\fs24\b1\i0\cf1 customer}{\f1\fs24\b0\i0\cf1  entity but the password will be blank.}
 \par\plain {\f1\fs24\b0\i0\cf1 The Identities list will include the customer account used to log in. The data includes:}
 \par\pard\plain \li709\fi-349\ri-998\ql\ltrch\loch \ls2\ilvl0{\listtext\f1\fs24\b0\i0\cf1	\bullet 	}{\f1\fs24\b0\i0\cf1 authentication provider}
 \par\plain \ilvl0{\listtext\f1\fs24\b0\i0\cf1	\bullet 	}{\f1\fs24\b0\i0\cf1 authentication partner customer_id, (usually the email)}
