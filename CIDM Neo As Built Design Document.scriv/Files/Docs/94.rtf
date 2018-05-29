@@ -6,12 +6,13 @@
 \pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If Sharing Preference is \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93No\u8221\'94, only data marked as \u8220\'93share without asking\u8221\'94 will be shared. }
 \par\plain {\f1\fs24\b0\i0\cf1 Otherwise the data will be shared with the agency:}
 \par\plain \f1\fs24\b0\i0\cf1
-\par\plain {\f1\fs24\b0\i0\cf1 If the requested level is 1, then data marked as \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93share without asking\u8221\'94 and \u8220\'93self asserted\u8221\'94 will be returned.}
-\par\pard\plain \ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the requested level is 2, then}
+\par\pard\plain \ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the requested level is 1, then data marked as "share without asking" and "self asserted" and \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93authoritative\u8221\'94 will be returned. AAL is always at least 1, and will satisfy a level 1 request.}
+\par\pard\plain \ri-477\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the requested level is 2, and AAL is 1, then}
 \par\pard\plain \li708\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the authentication partner IAAL is 1 then }
 \par\pard\plain \li1416\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 the step up process is invoked, sending an SMS to mobile number.}
 \par\plain {\f1\fs24\b0\i0\cf1 Correctly entering the code will increase the IAAL to 2}
 \par\pard\plain \li708\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the customer's identity AAL is 1, then }
 \par\pard\plain \li1416\ri-999\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 they have to through the evidence of identity process to get the identity to an IRAL of 2}
 \par\plain {\f1\fs24\b0\i0\cf1 Once both IAAL and IRAL are equal to 2, the data can be shared, subject to the sharing preference.}
-\par\pard\plain \ri-999\ql\ltrch\loch \f1\fs24\b0\i0\cf1}
+\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the requested level is 2, and the AAL is 2, then data marked as "share without asking" and "self asserted" and \loch\af1\hich\af1\dbch\af1\uc1\u8220\'93authoritative\u8221\'94 will be returned. }
+\par\pard\plain \ri-477\ql\ltrch\loch \f1\fs24\b0\i0\cf1}

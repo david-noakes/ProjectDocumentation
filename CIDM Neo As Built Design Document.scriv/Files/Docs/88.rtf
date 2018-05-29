@@ -1,6 +1,17 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
-{\fonttbl{\f0\fmodern\fcharset0\fprq2 CourierNewPSMT;}{\f1\fmodern\fcharset0\fprq2 TimesNewRomanPS-BoldMT;}{\f2\fmodern\fcharset0\fprq2 TimesNewRomanPSMT;}}
+{\fonttbl{\f0\fnil\fcharset0\fprq2 CourierNewPSMT;}{\f1\fnil\fcharset0\fprq2 TimesNewRomanPS-BoldMT;}{\f2\fnil\fcharset0\fprq2 TimesNewRomanPSMT;}}
 {\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue128;}
+{\*\listtable
+{\list\listtemplateid1\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li720\lin720}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9702\'3F;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li1080\lin1080}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9642\'3F;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li1440\lin1440}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li1800\lin1800}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9702\'3F;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li2160\lin2160}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9642\'3F;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li2520\lin2520}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li2880\lin2880}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\'01\loch\af0\hich\af0\dbch\af0\uc1\u9702\'3F;}{\levelnumbers;}\f2\fs24\b0\i0\cf1\cb2\highlight2\fi-360\li3240\lin3240}{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
 \pgnrestart\pgnstarts0
 \pard\plain \ltrch\loch {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_account}
@@ -47,21 +58,27 @@
 \par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The value field in the CustomerAttribute document is encrypted}
 \par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
 \par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_identity_core}
-\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Identity table is the core record for an Identity. The values stored here are not encrypted, since they are not identity values. (Currently qid, identityStatus, identityMobile, iral, dateCreated, DateModified)}
-\par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.IdentityCoreRecord}
-\par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
+\par\pard\plain \ql\ltrch\loch {\f2\fs24\b0\i0\cf1\cb2\highlight2 The Identity table is the core record for an Identity. Most values stored here are not encrypted, since they are not identity values. }
+\par\pard\plain \li720\fi-360\ri-998\ql\ltrch\loch \ls1\ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 qid, }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 identityStatus, }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 identityMobile (encrypted), }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 iral, }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 dateCreated, }
+\par\plain \ilvl0{\listtext\f2\fs24\b0\i0\cf1\cb2\highlight2	\bullet 	}{\f2\fs24\b0\i0\cf1\cb2\highlight2 DateModified}
+\par\pard\plain \ql\ltrch\loch {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.IdentityCoreRecord}
+\par\pard\plain \ltrch\loch \f2\fs24\b0\i0\cf1\cb2\highlight2
 \par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_rsa_signing_keys}
 \par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 Stores keys for use in the RSA signing process of attributes and authorisation tokens}
 \par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.RSASigningKeyRecord}
 \par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
 \par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_session_attributes}
-\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table stores attributes required for a user session. There will be multiple records for a sessionId}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table stores attributes required for a user session. There will be multiple records for a sessionId. The table is configured with a TTL of 2 hours, ensuring expired session data is deleted.}
 \par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.SessionAttributesRecord}
 \par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.CustomerAttribute (embedded document)}
 \par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 The value field in the CustomerAttribute document is encrypted}
 \par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
 \par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_session_iaal}
-\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table records the IAAL for the session. This is Identity Authentication Assurance Level with levels 0 to 2, and is the measure of trust in the Authentication Provider.}
+\par\plain {\f2\fs24\b0\i0\cf1\cb2\highlight2 This table records the IAAL for the session. This is Identity Authentication Assurance Level with levels 0 to 2, and is the measure of trust in the Authentication Provider. The table is configured with a TTL of 2 hours, ensuring expired session data is deleted. The IAAL is updated when a customer performs a StepUp.}
 \par\plain {\f1\fs24\b1\i0\cf3\cb2\highlight2 class }{\f2\fs24\b0\i0\cf1\cb2\highlight2 au.gov.qld.idm.neo.identity.model.dynamo.SessionIAALRecord}
 \par\plain \f2\fs24\b0\i0\cf1\cb2\highlight2
 \par\plain {\f1\fs24\b1\i0\cf1\cb2\highlight2 idm_verification_group}
