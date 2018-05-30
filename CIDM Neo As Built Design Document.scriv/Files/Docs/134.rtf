@@ -67,7 +67,7 @@
 
 \pard\plain \intbl\itap1\sa120\sb120\qj{\f3\fs24\b0\i0\cf1 "ABA"}\cell 
 \pard\plain \intbl\itap1\sa120\sb120\ql{\f3\fs24\b0\i0\cf1 "Australian Business Account"}
-\par\plain \intbl\itap1{\f3\fs24\b0\i0\cf1 ABA credential will be discontinued on 29/6/18}\cell 
+\par\plain \intbl\itap1{\f2\fs24\b1\i0\cf1 ABA credential will be discontinued on 29/6/18}\cell 
 \pard\plain \intbl\itap1\sa120\sb120\qj{\f3\fs24\b0\i0\cf1 1}\cell{
 \trowd\trgaph0 \trautofit1 \trbrdrr\brdrnil \trbrdrl\brdrnil 
 \clvertalt \clshdrawnil\clbrdrt\brdrs\brdrw10\brdrcf3 \clbrdrr\brdrs\brdrw10\brdrcf3 \clbrdrb\brdrs\brdrw10\brdrcf3 \clbrdrl\brdrs\brdrw10\brdrcf3 \cellx4000
@@ -205,13 +205,13 @@
 \pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
 \par\plain {\f1\fs24\b0\i0\cf1 The 2 CIDM Classic accounts, ("CIDM-AAL1", "CIDM-AAL2"), are for use when a customer has logged in through CIDM Classic (wrapped), and now transfers to a service that uses CIDM Neo. They reflect the session AAL level at the time of transfer. }
 \par\plain \f1\fs24\b0\i0\cf1
-\par\pard\plain \ql\ltrch\loch {\f4\fs24\b1\i0\cf1 Definition}{\f1\fs24\b0\i0\cf1 : The session AAL is the minimum of the session IAAL and the identity IRAL.}
+\par\plain {\f4\fs24\b1\i0\cf1 Definition}{\f1\fs24\b0\i0\cf1 : The session AAL is the minimum of the session IAAL and the identity IRAL.}
 \par\plain \f1\fs24\b0\i0\cf1
-\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 Upon successful login, Auth0 passes any login data and session data back to the widget. The login widget in turn passes this data to CIDM Neo. If the identity does not exist (as identified by the authentication Partner Id and authentication Partner Key), then a new identity is created, a QID is allocated, and the account information is linked with the identity. The new identity is created with an IRAL of 1.}
+\par\plain {\f1\fs24\b0\i0\cf1 Upon successful login, Auth0 passes any login data and session data back to the widget. The login widget in turn passes this data to CIDM Neo. If the identity does not exist (as identified by the authentication Partner Id and authentication Partner Key), then a new identity is created, a QID is allocated, and the account information is linked with the identity. The new identity is created with an IRAL of 1.}
 \par\plain {\f1\fs24\b0\i0\cf1 For a service requesting an AAL level of 2, if the session IAAL is not 2, then step up will be initiated in an attempt to move the IAAL to 2. }
 \par\plain {\f1\fs24\b0\i0\cf1 If the identity IRAL is 1 and the service request required an AAL of 2, the evidence of identity process is initiated to take the identity up to an IRAL level of 2.}
-\par\pard\plain \ql\ltrch\loch \f1\fs24\b0\i0\cf1
-\par\pard\plain \ql\ltrch\loch {\f1\fs24\b0\i0\cf1 At this point, control returns to the Agency page. The agency will request identity data and a security level (1 or 2).}
+\par\plain \f1\fs24\b0\i0\cf1
+\par\plain {\f1\fs24\b0\i0\cf1 At this point, control returns to the Agency page. The agency will request identity data and a security level (1 or 2).}
 \par\plain \f1\fs24\b0\i0\cf1
 \par\pard\plain \ri-477\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 If the sharing preference is not equal to Always then}
 \par\pard\plain \li708\ri-477\ql\ltrch\loch {\f1\fs24\b0\i0\cf1 The sharing preference widget displays the sharing preference dialogue}
